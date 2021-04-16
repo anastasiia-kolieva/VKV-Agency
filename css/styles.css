@@ -116,6 +116,9 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.about-us__block:not(:last-child) {
     margin-bottom: 60px;
 }
 
@@ -143,17 +146,70 @@ img {
 }
 
 .about-us__img {
+    width: 384px;
+    height: 324px;
     margin-bottom: 40px;
 }
-
-/* 
-для десктопа
-.about-us__block:not(:last-child) {
- margin-right: 30px;
- } */
 
 @media (min-width: 1424px) {
     .container {
         width: 1110px;
+    }
+
+    /* .circle__menu {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+    } */
+
+    .about-us {
+        padding-top: 270px;
+    }
+
+    .about-us__block {
+        flex-wrap: nowrap;
+    }
+
+    .about-us__block:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 100px;
+    }
+
+    .about-us--with-image {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .about-us__title {
+        width: 445px;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+
+    .about-us__text-block {
+        width: 634px;
+    }
+
+    .about-us__text {
+        font-size: 18px;
+    }
+
+    .about-us__text--first-text {
+        padding-bottom: 16px;
+    }
+
+    .about-us__text--last-text {
+        width: 445px;
+        text-align: right;
+        margin-right: 30px;
+    }
+
+    .about-us__img {
+        width: 635px;
+        height: 324px;
+        margin-bottom: 0;
     }
 }
