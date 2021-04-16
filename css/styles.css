@@ -126,6 +126,11 @@ img {
     margin-right: 300px;
 }
 
+.navigation__logo--img {
+    width: 56px;
+    height: 46px;
+}
+
 .navigation__logo--link {
     display: inline-block;
 }
@@ -198,11 +203,61 @@ img {
     margin-bottom: 40px;
 }
 
+/* For desktop */
 @media (min-width: 1424px) {
     .container {
         width: 1110px;
     }
 
+    /* Header */
+
+    /* Navigation */
+
+    .navigation {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navigation__logo {
+        margin-right: 306px;
+    }
+
+    .navigation__logo--img {
+        width: 96px;
+        height: 80px;
+    }
+
+    .navigation__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation__list {
+        display: inline;
+        flex-wrap: wrap;
+        width: 678px;
+    }
+
+    .navigation__block--flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation__list--item {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .navigation__burger {
+        display: none;
+    }
+
+    /* Section "About us" */
     .about-us {
         padding-top: 270px;
     }
