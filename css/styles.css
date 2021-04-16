@@ -116,9 +116,6 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.about-us--with-title {
     margin-bottom: 60px;
 }
 
@@ -139,6 +136,14 @@ img {
     font-size: 16px;
     line-height: 160%;
     color: #000000;
+}
+
+.about-us__text--first-text {
+    padding-bottom: 16px;
+}
+
+.about-us__img {
+    margin-bottom: 40px;
 }
 
 /* 
