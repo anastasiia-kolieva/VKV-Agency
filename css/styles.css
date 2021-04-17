@@ -108,12 +108,18 @@ img {
     width: 414px;
     height: 414px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url("../images/town.png");
     background-size: cover;
     border-radius: 50%;
     /* clip-path: circle(50% at center center); */
     margin: 0 auto;
+}
+
+.circle__block--wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .circle__logo {
@@ -145,6 +151,33 @@ img {
 .circle__menu--burger-img {
     width: 24px;
     height: 12px;
+}
+
+.circle__text--wrapper {
+    font-size: 0;
+}
+
+.circle__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.circle__text--bold {
+    display: block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 /* Navigation */
@@ -266,7 +299,7 @@ img {
         width: 96px;
         height: 80px;
         padding-top: 10px;
-        margin-right: 0px;
+        margin-right: 930px;
     }
 
     .mobile {
@@ -291,6 +324,17 @@ img {
 
     .circle__menu--burger {
         display: none;
+    }
+
+    .circle__text {
+        font-size: 24px;
+        line-height: 33px;
+        padding-bottom: 80px;
+    }
+
+    .circle__text--bold {
+        font-size: 72px;
+        line-height: 98px;
     }
 
     /* Navigation */
