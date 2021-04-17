@@ -99,13 +99,52 @@ img {
 /* Header */
 
 /* Circle */
+.circle {
+    padding-top: 160px;
+    margin-bottom: 160px;
+}
+
+.circle__block {
+    width: 414px;
+    height: 414px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../images/town.png");
+    background-size: cover;
+    border-radius: 50%;
+    /* clip-path: circle(50% at center center); */
+    margin: 0 auto;
+}
+
+.circle__logo {
+    width: 74px;
+    height: 22px;
+    margin-right: 274px;
+}
+
+.circle__logo--link {
+    display: inline-block;
+}
+
+.desktop {
+    display: none;
+}
+
 .circle__menu {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
+    display: none;
+}
+
+.circle__menu--burger {
+    width: 74px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circle__menu--burger-img {
+    width: 24px;
+    height: 12px;
 }
 
 /* Navigation */
@@ -199,7 +238,7 @@ img {
 
 .about-us__img {
     width: 384px;
-    height: 324px;
+    height: auto;
     margin-bottom: 40px;
 }
 
@@ -210,6 +249,49 @@ img {
     }
 
     /* Header */
+
+    /* Circle */
+    .circle {
+        padding-top: 0px;
+        margin-bottom: 150px;
+    }
+
+    .circle__block {
+        width: 1024px;
+        height: 1024px;
+        padding-top: 0px;
+    }
+
+    .circle__logo {
+        width: 96px;
+        height: 80px;
+        padding-top: 10px;
+        margin-right: 0px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+    }
+
+    .circle__menu {
+        display: inline;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-top: 36px;
+    }
+
+    .circle__menu--burger {
+        display: none;
+    }
 
     /* Navigation */
 
@@ -302,7 +384,7 @@ img {
 
     .about-us__img {
         width: 635px;
-        height: 324px;
+        height: auto;
         margin-bottom: 0;
     }
 }
